@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8"/>
   <title>Garissa University Attack: A Tribute</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0"/>
-  <meta name="description" content=""/>
-  <meta name="keywords" content=""/>
-  <link rel="shortcut-icon" type="image/png" href="http://wpsuperstars.adamconnell1.netdna-cdn.com/wp-content/uploads/2015/01/59.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" type="text/css" href="assets/css/layout.css"/>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
   <link href="https://fonts.googleapis.com/css?family=Rationale" rel="stylesheet"/>
@@ -16,12 +13,11 @@
 <body>
   <div class="intro-panel">
     <div class="intro-box clearfix">
-      <button class="continue-site">skip intro</button>
+      <button class="continue-site">Skip Intro</button>
       <h1 class="intro-text"></h1>
     </div>
   </div>
-
-  <header class="sticky-header">
+  <header>
     <h1>Garissa University Attack: A Tribute</h1>
     <nav>
       <ul>
@@ -32,7 +28,24 @@
       </ul>
     </nav>
   </header>
-
+  <main>
+    <section>
+      <h2>Welcome</h2>
+      <p>This website is created to give tribute to the victims of the Garissa University attack.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Garissa University Memorial</p>
+  </footer>
   <script async type="text/javascript" src="assets/js/script.js"></script>
+  <script type="text/javascript">
+    window.addEventListener('load', function() {
+      var quit_intro = document.getElementsByClassName('continue-site')[0];
+      quit_intro.addEventListener('click', function() {
+        hide_intro();
+      });
+      typer('intro-text', 'In memory of the victims of the Garissa University attack, this website serves as a tribute and a reminder of the precious lives lost.', 50);
+    });
+  </script>
 </body>
 </html>

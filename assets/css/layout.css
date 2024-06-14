@@ -1,83 +1,87 @@
 html, body {
-    height: 100%;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-  }
-  
-  header {
-    background-color: red;
-    padding: 20px;
-    text-align: center;
-    color: white;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  main {
-    flex: 1;
-    padding: 20px;
-    color: white;
-  }
-  
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-  }
-  
-  .intro-panel {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.9);
-    color: white;
-  }
-  
-  .intro-box {
-    text-align: center;
-  }
-  
-  .intro-text {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .continue-site {
-    background-color: #ff9800;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .continue-site:hover {
-    background-color: #e68900;
-  }
-  
-  section {
-    margin-bottom: 20px;
-  }
-  
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+header {
+  background-color: red;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  flex: 1;
+  padding: 100px 20px 20px;
+  color: white;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.intro-panel {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+
+.intro-box {
+  text-align: center;
+}
+
+.intro-text {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.continue-site {
+  background-color: #ff9800;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.continue-site:hover {
+  background-color: #e68900;
+}
+
+section {
+  margin-bottom: 20px;
+}
